@@ -1372,24 +1372,16 @@ video {
   gap: 0.75rem;
 }
 
+.gap-32 {
+  gap: 8rem;
+}
+
 .gap-36 {
   gap: 9rem;
 }
 
 .gap-7 {
   gap: 1.75rem;
-}
-
-.gap-9 {
-  gap: 2.25rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-32 {
-  gap: 8rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
