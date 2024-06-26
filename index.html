@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imgs/IconKitchen-Output/web/apple-touch-icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="./css/output.css">
     <title>Subvisual Figma TW</title>
 
     <style>
         .mainColor {
             background-color: #1F3F86;
+        }
+
+        .bgColor {
+            background-color: #EFF7FF;
         }
 
 
@@ -40,10 +46,19 @@
         .shadowBottom {
             box-shadow: 0px 0px 5px 8px rgba(33, 53, 120, 0.555);
         }
+
+        .line {
+            height: 1px;
+            background-color: #9563FF;
+        }
+
+        .pl {
+            padding-left: 300px;
+        }
     </style>
 </head>
 <body>
-    <header class="w-full mainColor fixed shadowBottom" >
+    <header class="w-full mainColor fixed shadowBottom z-[1000]" >
         <nav class="containerAll">
             <ul class="flex pt-7 pb-7 justify-end gap-12">
                 <li><a class="text-white transition-all hover:underline" href="#">Services</a></li>
@@ -68,7 +83,8 @@
            </div>
         </section>
 
-        <section class="containerAll mt-60">
+        <section class="containerAll mt-40">
+           <div class="pb-8">
             <div class="font-normal text-5xl flex gap-3 pb-2 ">
                 <p>If you </p>
                 <p class="text-blue-600"> think</p>
@@ -78,6 +94,7 @@
                 <p>we're</p>
                 <p class="text-blue-600">here to help</p>
             </div>
+           </div>
 
             <div class="flex justify-between pt-14">
                 <div class="flex gap-7  flex-col widthdesk mt-14 text-lg font-normal text-gray-800">
@@ -100,7 +117,240 @@
             </div>
 
         </section>
+
+
+        <section class="  mt-24 mb-24 relative h-full   z-50 ">
+            <div class="containerAll ">
+                <div class="flex items-center gap-40 ">
+                    <p>What our clients say</p>
+                    <div class="flex items-center gap-7">   
+                        <div class="w-14 h-1 line"></div>
+                        <p>Utrust</p>
+                    </div>
+                </div>
+    
+                <div class="pt-24 pl absolute z-40">
+                    <p class="widthdesk ">Subvisual’s team was crucial to our success as they were with us since the company's inception. Together with the Founders, they were tireless and helped us through every step not only with the expertise that guided us throughout the journey, but also by actually providing a team to build the product with us.z</p>
+                    <p>Sanja Kon - CEO</p>
+                </div>
+    
+                <div class="pl flex gap-7 py-28 absolute z-50 mt-52">
+                    <img src="./imgs/chevron right.svg" alt="img">
+                    <img src="./imgs/chevron left.svg" alt="img">
+                </div>
+    
+            </div>
+            <div class="bg-red-600">
+                <img class="absolute z-30 top-[204px] left-[215px]" src="./imgs/mini circle.svg" alt="img">
+                <img class="absolute z-20 top-[260px]" src="./imgs/circle left.svg" alt="img">
+                <img class="absolute z-10 top-[295px] left-[270px]" src="./imgs/Rectangle.svg" alt="img">
+            </div>
+            
+        </section>
+
+
+        <section class="pt-[700px] flex containerAll gap-32 items-start h-lvh">
+            <div class="flex flex-col gap-2">
+                <div class="flex gap-2">
+                    <p class="font-semibold text-[#403F4C] text-5xl">One step at a</p>
+                    <p class="font-semibold text-[#045CFC] text-5xl">time</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-[#403F4C] text-5xl">every step of the way</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="font-semibold text-2xl text-[#403F4C] w-[500px]">These are some examples of digital products we helped develop.   </p>
+            </div>
+        </section>
         
+        <section class="pt-[400px] flex containerAll gap-48">
+            <div class="flex flex-col gap-5">
+                <div class="flex gap-2 items-center">
+                    <div class="w-14 h-[2px] bg-[#9563FF]"></div>
+                    <p class="font-semi text-xl text-[#403F4C] uppercase">Utrust</p>
+                </div>
+                <h3 class="font-semibold text-2xl text-[#403F4C] w-80">Assist in strategic thinking and product development.</h3>
+                <p class="font-semi text-xl text-[#403F4C] w-[523px]">Subvisual joined Utrust as part of their team to help them define a strategy and build a product that was stable to go to market. From ideation to strategy through development, Subvisual was there to support decisions and provide experience-based knowledge.</p>
+            </div>
+
+            <div>
+                <img src="./imgs/img pink.svg" alt="img">
+            </div>
+        </section>
+        <section class="pt-[200px] flex containerAll gap-48">
+            <div class="flex flex-col gap-5 order-2">
+                <div class="flex gap-2 items-center">
+                    <div class="w-14 h-[2px] bg-[#9563FF]"></div>
+                    <p class="font-semi text-xl text-[#403F4C] uppercase">Utrust</p>
+                </div>
+                <h3 class="font-semibold text-2xl text-[#403F4C] w-80">Assist in strategic thinking and product development.</h3>
+                <p class="font-semi text-xl text-[#403F4C] w-[523px]">Subvisual joined Utrust as part of their team to help them define a strategy and build a product that was stable to go to market. From ideation to strategy through development, Subvisual was there to support decisions and provide experience-based knowledge.</p>
+            </div>
+
+            <div class="order-1">
+                <img src="./imgs/lightorange.svg" alt="img">
+            </div>
+            
+        </section>
+
+        <div class="mt-20 flex items-center justify-center w-full ">
+            <button class="m-auto w-[400px] rounded-[60px] border-[#045CFC] border-[2px] py-4 text-xl text-[#045CFC]">Check our services</button>
+        </div>
+
+
+        <section class="bg-[#2C03AB] rounded-[30px] h-[640px] pt-28 pl-12 flex mt-28 gap-36 ">
+            <div class="flex flex-col gap-16 mt-5">
+                <div>
+                    <div class="flex gap-3">
+                        <p class="font-semibold text-5xl text-white">A</p>
+                        <p class="font-semibold text-5xl text-[#FF7B9B]">love</p>
+                        <p class="font-semibold text-5xl text-white">affair between</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <p class="font-semibold text-5xl text-[#FF7B9B]">innovation</p>
+                        <p class="font-semibold text-5xl text-white">and</p>
+                        <p class="font-semibold text-5xl text-[#FF7B9B]">technology</p>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col gap-7">
+                    <p class="text-xl font-semi text-white w-[530px]">We’re not only about products. We’re also a venture studio. It’s here where innovation and technology come together to do amazing things for the people.</p>
+    
+                    <p class="text-xl font-semi text-white">See what we can do to boost your business and product.</p>
+                </div>
+    
+            </div>
+
+            <div class="flex scroll-mt-50 w-[350px] h-[60px] mt-72">
+                <button class="border-[2px] border-white rounded-[60px] w-full text-xl uppercase text-white hover:bg-white hover:text-[#2C03AB] hover:text-xl font-semibold transition-all duration-300">Explore NOW</button>
+            </div>
+
+        </section>
+
+        <section class="mt-[200px] containerAll  ">
+            <div class="flex gap-48">
+                <div>
+                    <div>
+                        <p class="font-semibold text-5xl text-[#403F4C]">Join us in nurturing</p>
+                        <div class="flex gap-3">
+                            <p class="font-semibold text-5xl  text-[#045CFC]">ideas</p>
+                            <p class="font-semibold text-5xl text-[#403F4C]">that</p>
+                            <p class="font-semibold text-5xl text-[#045CFC]">empower</p>
+                        </div>
+                        <p class="font-semibold text-5xl text-[#403F4C]">people</p>
+                    </div>
+        
+                    <div class="mt-14 mb-10">
+                        <h4 class="font-semibold text-[#403F4C] text-2xl">Be part of a team that brings great</h4>
+                        <h4 class="font-semibold text-[#403F4C] text-2xl">projects to life.</h4>
+                    </div>
+        
+                    <p class="text-xl text-[#403F4C] w-[460px]">Our core focus is to build an environment where people can learn, contribute and exceed while exploring this new web3 world.</p>
+                   </div>
+        
+                   <div>
+                    <img src="./imgs/join.svg" alt="img">
+                   </div>
+            </div>
+
+            <div class="flex justify-center items-center mt-16">
+                <button class="uppercase border-[2px] border-[#045CFC] rounded-[60px] w-[250px] text-[#045CFC] h-[50px] hover:bg-[#045CFC] hover:text-white transition-all duration-300" >join us</button>
+            </div>
+        </section>
+
+        <section class="containerAll mt-48">
+            <div class="flex gap-10 items-center">
+                <div class="w-14 h-[2px] bg-[#9563FF]"></div>
+                <p class="font-semi text-xl text-[#403F4C] uppercase">Visit OUR BLOG</p>
+            </div>
+
+            <div class="flex gap-8">
+                <div class="w-[400px] h-[280px] bg-[#E8F4FF] rounded-[28px] p-[40px] pt-[60px] flex flex-col mt-9 ml-5 ">
+                    <h4 class="font-semibold text-[21px] w-[300px] text-[#403F4C]">Adding Netlify CMS to a website built with Still outside of Netlify</h4>
+                    <a class="text-[#045CFC] mt-7 border-b-2 w-fit border-[#045CFC] text-[20px]" href="#">Read more</a>
+                </div>
+                <div class="w-[400px] h-[280px] bg-[#E8F4FF] rounded-[28px] p-[40px] pt-[60px] flex flex-col mt-9 ml-5 ">
+                    <h4 class="font-semibold text-[21px] w-[300px] text-[#403F4C]">Adding Netlify CMS to a website built with Still outside of Netlify</h4>
+                    <a class="text-[#045CFC] mt-7 border-b-2 w-fit border-[#045CFC] text-[20px]" href="#">Read more</a>
+                </div>
+                <div class="w-[400px] h-[280px] bg-[#E8F4FF] rounded-[28px] p-[40px] pt-[60px] flex flex-col mt-9 ml-5 ">
+                    <h4 class="font-semibold text-[21px] w-[300px] text-[#403F4C]">Adding Netlify CMS to a website built with Still outside of Netlify</h4>
+                    <a class="text-[#045CFC] mt-7 border-b-2 w-fit border-[#045CFC] text-[20px]" href="#">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-60 relative">
+            <img class="w-full" src="./imgs/bg img.svg" alt="img">
+
+            <div class="absolute top-[400px] left-[100px] pb-20">
+                <h1 class="font-semibold text-white text-8xl w-[1000px]">Ready to take the next step?</h1>
+                <div>
+                    <button class=" mt-7 w-[300px] h-[70px]  text-[20px] border-[2px] rounded-[60px] text-white px-10">LET'S TALK</button>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="containerAll mt-40 flex flex-col gap-20">
+       <div class="flex gap-[100px] flex-col ml-20">
+        <div class="flex gap-[310px]">
+            <div class="flex flex-col gap-3">
+                <h1 class="text-[#045CFC] font-semibold text-[28px] text-2xl">Go to</h1>
+                <div class="flex gap-[117px] gap-20 text-[#403F4C] text-xl">
+                    <a class="hover:underline" href="#">Services</a>
+                    <a class="hover:underline" href="#">Ventures</a>
+                </div>
+                <div class="flex gap-[117px] text-xl text-[#403F4C]">
+                    <a class="hover:underline" href="#">People</a>
+                    <a class="hover:underline pl-3" href="#">Blog</a>
+                </div>
+                <div class="text-xl text-[#403F4C]">
+                    <a class="hover:underline" href="#">Jobs / Careers</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <h1 class="text-[#045CFC] font-semibold text-[28px] text-2xl">We're social</h1>
+                <div class="flex  gap-10 text-[#403F4C] text-xl">
+                    <a class="hover:underline" href="#">Md</a>
+                    <a class="hover:underline" href="#">Be</a>
+                    <a class="hover:underline" href="#">Git</a>
+                    <a class="hover:underline" href="#">Dri</a>
+                    <a class="hover:underline" href="#">In</a>
+                    <a class="hover:underline" href="#">Fb</a>
+                    <a class="hover:underline" href="#">Tw</a>
+                    <a class="hover:underline" href="#">Ins</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="flex gap-[310px]">
+            <div class="flex flex-col gap-3">
+                <h1 class="text-[#045CFC] font-semibold text-[28px] text-2xl">Contact us</h1>
+                <div class="flex gap-[117px] gap-20 text-[#403F4C] text-xl">
+                    <a class="hover:underline" href="#">contact@subvisual.com</a>
+                    
+                </div>
+                
+            </div>
+            <div class="flex flex-col gap-3 pl-14">
+                <h1 class="text-[#045CFC] font-semibold text-[28px] text-2xl">Offices</h1>
+                <div class="flex flex-col text-[#403F4C] text-xl">
+                    <p class="hover:underline">Remote. Work anywhere in Europe.</p>
+                    <p class="hover:underline">Or join our mothership, landed in Braga, Portugal.</p>
+                    
+                </div>
+                
+            </div>
+        </div>
+       </div>
+
+       <div class="flex gap-20 mb-20 ml-10">
+        <img src="./imgs/footerimg.svg" alt="img">
+        <img src="./imgs/footerimg.svg" alt="img">
+       </div>
+    </footer>
 </body>
 </html>
